@@ -4,17 +4,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MessageService {
+public class GreetingMessage {
 	
-	@GetMapping("/hello")
+	@GetMapping("/hi")
 	public String sayHello() {
-		return "Hello Engineers";
+		return "Hi Shahbaz";
 	}
 	
 	
-	@GetMapping("/welcome")
+	@GetMapping("/Session")
 	public String welcomeGuest() {
-		return "Welcome to the world of DevOps !!!";
+		return "Welcome to DevOps Session !!!";
 	}
 
 }

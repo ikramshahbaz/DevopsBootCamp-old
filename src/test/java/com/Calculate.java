@@ -8,20 +8,20 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class TestCalculatorService {
+public class Calculate {
 
-	int num1 = 10;
-	int num2 = 20;
-	CalculatorService calc = new CalculatorService();
+	int num1 = 20;
+	int num2 = 10;
+	CalculatorApp calc = new CalculatorApp();
 	
 	@Test
-	public void testSum() {
-		Assertions.assertEquals(30, calc.calculateSum());
+	public void testDif() {
+		Assertions.assertEquals(10, calc.calculateDiff());
 	}
 	
 	
 	@Test
-	public void testMultiply() {
-		Assertions.assertEquals(200, calc.calculateMultiply());
+	public void testDivide() {
+		Assertions.assertEquals(2, calc.calculateDivide());
 	}
 }

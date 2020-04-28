@@ -9,19 +9,19 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class TestMessageService {
+public class Greeting {
 	
 	@Test
 	public void testMessage() {
-		MessageService messageService = new MessageService();
-		System.out.println("hello");
-		Assertions.assertEquals(messageService.sayHello(), "Hello Engineers");
+		GreetingMessage messageService = new GreetingMessage();
+		System.out.println("hi");
+		Assertions.assertEquals(messageService.sayHello(), "Hi Shahbaz");
 	}
 	
 	@Test
 	public void testWelcome() {
-		MessageService ms = new MessageService();
-		Assertions.assertEquals("Welcome to the world of DevOps !!!", ms.welcomeGuest());
+		GreetingMessage ms = new GreetingMessage();
+		Assertions.assertEquals("Welcome to DevOps Session !!!", ms.welcomeGuest());
 	}
 	
 }
